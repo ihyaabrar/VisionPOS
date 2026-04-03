@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+alembic
+pydantic-settings
+pyyaml
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
+ultralytics
+opencv-python-headless
+numpy
+hypothesis
+pytest
+pytest-asyncio
+httpx

@@ -1,0 +1,36 @@
+model:
+  path: "models/best.pt"
+  confidence_threshold: 0.70
+  format: "pt"
+
+camera:
+  dedup_window_seconds: 2.0
+
+database:
+  type: "sqlite"
+  sqlite_path: "data/visionpos.db"
+  mysql_host: null
+  mysql_port: 3306
+  mysql_name: null
+  mysql_user: null
+  mysql_password: null
+
+transaction:
+  idle_timeout_minutes: 30
+
+inventory:
+  default_min_stock: 5
+
+dataset:
+  base_dir: "dataset/images"
+  burst_interval_seconds: 0.5
+
+auth:
+  jwt_secret: "change-this-secret"
+  jwt_expire_minutes: 480
+  max_failed_attempts: 5
+  lockout_minutes: 15
+
+logging:
+  level: "INFO"
+  file: "logs/visionpos.log"
